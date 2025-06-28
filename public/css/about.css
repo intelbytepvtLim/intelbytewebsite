@@ -1,0 +1,112 @@
+ .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #7b0a0a;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background-color: #7b0a0a;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Why Icons */
+    .why-icons i {
+      font-size: 2.5rem;
+      color: #7b0a0a;
+      transition: transform 0.3s ease;
+    }
+
+    .why-icons i:hover {
+      transform: scale(1.2);
+    }
+
+    .why-icons h5 {
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .why-icons p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* Team Cards */
+    .team-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+      padding: 25px 15px;
+      text-align: center;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .team-card img {
+      border-radius: 50%;
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      transition: transform 0.4s ease, border 0.4s ease;
+    }
+
+    .team-card:hover {
+      background-color: #7b0a0a;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .team-card:hover img {
+      border: 3px solid white;
+      transform: scale(1.1);
+    }
+
+    .team-card h5 {
+      font-weight: 600;
+    }
+
+    .team-card p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.team-card:hover {
+  background-color: #7b0a0a;
+  color: white;
+  transform: scale(1.07) rotateZ(0.5deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.why-icons i:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #7b0a0a88);
+}
+body {
+  animation: fadeInBody 1.2s ease-in-out;
+}
+
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,31 @@
+
+/* digital marketing */
+.progress-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(#28a745 0deg, #e9ecef 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(223,10,10);
+  transition: background 1s ease-out;
+}
+
+.progress-circle .percentage {
+  position: absolute;
+}
+
+@keyframes fillProgress {
+  from {
+    background: conic-gradient(#28a745 0deg, #e9ecef 0deg);
+  }
+  to {
+    background: conic-gradient(var(--color) var(--angle), #e9ecef var(--angle));
+  }
+}
+
