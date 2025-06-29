@@ -1,0 +1,115 @@
+/* ---------- Footer Styles ---------- */
+
+.footer {
+  background-color: #0b0a1e;
+  color: #fff;
+  padding: 60px 0 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 18px;
+}
+
+.footer h5::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: rgb(223, 10, 10);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.footer p,
+.footer li,
+.footer a {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: rgb(223, 10, 10);
+  text-decoration: underline;
+}
+
+.footer .btn-red {
+  background-color: rgb(223, 10, 10);
+  color: white;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.footer .btn-red:hover {
+  background-color: #a30000;
+}
+
+.footer .form-control {
+  border-radius: 0;
+  border: none;
+  padding: 10px;
+}
+
+.footer .btn-submit {
+  background-color: rgb(223, 10, 10);
+  color: white;
+  border-radius: 0;
+  padding: 10px 15px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.footer .btn-submit:hover {
+  background-color: #a30000;
+}
+
+.footer .title-gradient {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  padding-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* WhatsApp Button */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  padding: 14px;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.scroll-top-btn:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}

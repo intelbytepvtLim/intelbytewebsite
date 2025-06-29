@@ -1,7 +1,7 @@
 
         :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
+            --primary: #c10a0a;
+            --primary-dark: #8A0000;
             --secondary: #10b981;
             --dark: #1e293b;
             --light: #f8fafc;
@@ -11,7 +11,7 @@
             --transition: all 0.3s ease;
         }
         
-        * {
+        /* * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -22,7 +22,7 @@
             background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
             color: var(--dark);
             line-height: 1.6;
-        }
+        } */
         
         .container {
             max-width: 1200px;

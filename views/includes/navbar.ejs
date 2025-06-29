@@ -1,59 +1,61 @@
-
-<body>
-<!-- Top Bar -->
-<div class="top-bar">
+<!-- ✅ Fixed Single-line Responsive Top Bar -->
+<div class="top-bar  text-white py-2">
   <div class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col-md-4 d-flex align-items-center">
-        <!-- Location Icon with Google Maps Link -->
+    <div class="d-flex flex-wrap justify-content-between align-items-center text-white gap-2 flex-md-nowrap">
+      
+      <!-- Left: Location + Email -->
+      <div class="d-flex align-items-center gap-3 flex-grow-1 flex-md-grow-0">
         <a href="https://www.google.com/maps/place/Intelbyte+Tech+Pvt.+Ltd./@22.5503905,88.3814939,13z/data=!4m6!3m5!1s0x8b1be8159a0a15cd:0x92efe4b53dbf5ee5!8m2!3d22.57304!4d88.436733!16s%2Fg%2F11xh3d2jbx?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" 
            target="_blank" 
            style="color: inherit;">
           <i class="fas fa-location-arrow"></i>
         </a>
-        <!-- Email Icon -->
-        <div class="ms-3">
-          <a href="mailto:info@intelbyte.in" style="color: inherit;">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
+        <a href="mailto:info@intelbyte.in" class="text-white text-decoration-none d-flex align-items-center">
+          <i class="fas fa-envelope me-1"></i>
+          <!-- <span class="d-none d-sm-inline">info@intelbyte.in</span> -->
+        </a>
       </div>
 
-      <div class="col-md-4 text-center">
-        <img src="/icon.png" alt="Logo" height="30"  />
-        <span style="color:  rgb(223,10,10); font-weight: 600;">IntelByte</span>
+      <!-- Center: Logo + Name -->
+      <div class="d-flex align-items-center justify-content-center flex-grow-1">
+        <img src="/icon.png" alt="Logo" height="30" class="me-2" />
+        <span style="color: #ffffff; font-weight: 500;">intelByte</span>
       </div>
 
-      <div class="col-md-4 text-end">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-        <a href="#"><i class="fas fa-times"></i></a>
+      <!-- Right: Social Icons -->
+      <div class="d-flex align-items-center gap-3 flex-grow-1 justify-content-end flex-md-grow-0">
+        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="text-white"><i class="fas fa-times"></i></a>
       </div>
+
     </div>
   </div>
 </div>
-
 
 
 <!-- Main Navbar -->
 <nav class="navbar navbar-expand-lg  main-navbar ">
   <div class="container-fluid">
     <!-- Logo -->
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/intelbyte">
       <img src="/icon.png" alt="Logo" height="40" />
     </a>
 
-    <!-- Toggler for mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Toggler for mobile -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
 
     <!-- Nav links -->
-   <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link " href="/intelbyte">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/intelbyte/about">About</a></li>
-        <li class="nav-item dropdown">
+ <!-- Offcanvas Mobile Menu -->
+<div class="collapse navbar-collapse custom-mobile-collapse" id="mainNav">
+  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+      <li class="nav-item"><a class="nav-link" href="/intelbyte">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/intelbyte/about">About</a></li>
+       <li class="nav-item dropdown">
           <a class="nav-link dropdown" href="/intelbyte/service" data-bs-toggle="dropdown">Services</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/intelbyte/App Developmentl">App Development</a></li>
@@ -62,98 +64,77 @@
               <li><a class="dropdown-item" href="/intelbyte/Software Development">Software Development</a></li>
                <li><a class="dropdown-item" href="/intelbyte/Digital Marketing">Digital Marketing</a></li>
                 <li><a class="dropdown-item" href="/intelbyte/Graphic Designing">Graphic Designing</a></li>
-                 <li><a class="dropdown-item" href="/intelbyte/Artificial Intelligence">Artificial Intelligence (AI) & Blockchain Development</a></li>
+                 <li><a class="dropdown-item" href="/intelbyte/Blockchain Development">Artificial Intelligence (AI) & Blockchain Development</a></li>
                  <li><a class="dropdown-item" href="/intelbyte/Game Development">Game Development</a></li> 
           </ul>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown" href="career.html" data-bs-toggle="dropdown">Career</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">JON OPENING</a></li>
-            <li><a class="dropdown-item" href="#">LIFE AT IDIOSYS</a></li>
-          </ul>
-        </li> -->
-        <!-- <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        -->
-        <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
-      
-        <li class="nav-item"><a class="nav-link" href="/intelbyte/contact">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="/intelbyte/package">Package</a></li>
-      
-      </ul>
-
-      <!-- Right side buttons -->
-      
-
-        <!-- <a href="#" class="me-3"><i class="fas fa-user"></i></a> -->
-        <!-- <a href="/intelbyte/contact" class="btn btn-quote me-3"> -->
-          <!-- <i class="fab fa-whatsapp"></i> Get A Quote -->
-           <!-- Get A Quote
-        </a> -->
-        <div class="call-info d-none d-lg-block">
-  <i class="fas fa-phone-alt"></i> Call Anytime <br />
-  <strong><a href="tel:+907250262" >+91-907250262</a></strong>
+      <li class="nav-item"><a class="nav-link" href="/intelbyte/contact">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="/intelbyte/package">Package</a></li>
+    </ul>
+ 
 </div>
+
+
+    
+<div class="call-info d-none d-lg-block">
+  <i class="fas fa-phone-alt" style="color: #8A0000;"></i> Call Anytime <br />
+  <strong>
+    <a href="tel:+91907250262" class="phone-link">+91-907250262</a>
+  </strong>
+</div>
+
 
       </div>
     </div>
   </div>
 </nav>
+
+
+
 <!-- banner -->
-<div class="banner">
+<div class="banner py-5">
   <div class="container">
-    <div class="row align-items-center justify-content-between">
+    <div class="d-flex flex-nowrap justify-content-between align-items-stretch gap-4 flex-banner">
 
       <!-- Left Side Text -->
-      <div class="col-md-6 banner-text">
+      <div class="banner-text text-white p-3 w-50">
         <p>Empower Your Business</p>
-        <h3 style="color: aliceblue;">Excellent IT services for your success</h3>
-        <a href="/intelbyte/about" class="btn custom-red-btn">Know More</a>
+        <h3 class="fw-bold">Excellent IT services for your success</h3>
+        <a href="/intelbyte/about" class="btn custom-red-btn mt-3">Know More</a>
       </div>
 
       <!-- Right Side Form -->
-      <div class="col-md-5">
-        <div class="form-card">
+      <div class="form-card bg-white text-dark p-4 rounded w-50">
+        <div class="form-header mb-3 text-center">
+          <img src="/icon.png" alt="Logo" style="height: 40px;" />
+          <div style="color: #8A0000; font-weight: bold;">IntelByte</div>
+        </div>
 
-          <!-- Form Header -->
-          <div class="form-header">
-            <img src="/icon.png" alt="Logo" />
-            <span>IntelByte</span>
+        <form id="contactForm" class="contact-form">
+          <input type="hidden" name="access_key" value="a70bf62b-5af1-417e-ae34-e071507cd59c">
+
+          <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="Email Id" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" name="phone" class="form-control" placeholder="Phone No." required>
+          </div>
+          <div class="mb-3">
+            <textarea name="message" class="form-control" placeholder="Your Message" rows="3" required></textarea>
           </div>
 
-          <!-- Form -->
-          <!-- Form -->
-<form id="contactForm" class="contact-form">
-  <!-- ✅ Web3Forms Access Key -->
-  <input type="hidden" name="access_key" value="a70bf62b-5af1-417e-ae34-e071507cd59c">
-
-  <div class="mb-3">
-    <input type="text" name="name" class="form-control" placeholder="Name" required>
-  </div>
-
-  <div class="mb-3">
-    <input type="email" name="email" class="form-control" placeholder="Email Id" required>
-  </div>
-
-  <div class="mb-3">
-    <input type="tel" name="phone" class="form-control" placeholder="Phone No." required>
-  </div>
-
-  <div class="mb-3">
-    <textarea name="message" class="form-control" placeholder="Your Message" rows="3" required></textarea>
-  </div>
-
-  <button type="submit" class="btn custom-red-btn w-100" id="submitBtn">Send</button>
-
-  <p id="responseMessage" class="text-center mt-2"></p>
-</form>
-
-
-        </div>
+          <button type="submit" class="btn custom-red-btn w-100">Send</button>
+          <p id="responseMessage" class="text-center mt-2"></p>
+        </form>
       </div>
 
     </div>
   </div>
 </div>
+
+
 
 </body>

@@ -1,290 +1,4 @@
- .main-navbar {
-  background-color: #c4c3c3; /* Light gray */
-}
 
- 
- /* .nav-link {
-  position: relative;
-  color: #000;
-  font-weight: 500;
-  padding: 8px 15px;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-}
-.nav:hover{
-  color: red;
-}
-/* Hover effect */
-/* .nav-link:hover {
-  color: red;
-} */
-
-/* Underline animation */
-/* .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 15%;
-  background-color: red;
-  transition: width 0.3s ease;
-} */
-
-/* .nav-link:hover::after,
-.nav-link.active::after {
-  width: 70%;
-} */
-
-/* Optional: keep active red */
-/* .nav-link.active {
-  color: red;
-} */
-
-/* Base styles */
-/* Base style */
-.nav-link,
-.dropdown-item {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 8px 16px;
-  z-index: 1;
-  transition: color 0.3s ease;
-  font-weight: bold;
-  color: #000; /* Default color */
-}
-
-/* Hover effect */
-.nav-link:hover,
-.dropdown-item:hover {
-  color: rgb(223,10,10);
-}
-
-/* Red underline effect using pseudo-element */
-.nav-link::after,
-.dropdown-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px; /* 2px gap between text and underline */
-  width: 100%;
-  height: 2px;
-  background-color: rgb(223,10,10);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-/* On hover, show underline */
-.nav-link:hover::after,
-.dropdown-item:hover::after {
-  transform: scaleX(1);
-}
-
-/* Active class to keep red color and underline */
-.nav-link.active,
-.dropdown-item.active {
-  color: rgb(223,10,10);
-}
-
-.nav-link.active::after,
-.dropdown-item.active::after {
-  transform: scaleX(1);
-}
-
-@media (min-width: 992px) {
-  .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-  }
-}
-
-
-
- .top-bar {
-      background-color: #0b0a1e;
-      color: white;
-      font-size: 18px;
-      padding: 7px 0;
-    }
-
-    .top-bar i {
-      color: rgb(223,10,10);
-      margin-right: 5px;
-    }
-
-    .top-bar a {
-      color: white;
-      margin: 0 8px;
-      text-decoration: none;
-    }
-    .main-navbar{
-      height: 6rem;
-      
-    }
-    /* according to the Js */
-    .fixed-navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  transition: all 0.3s ease-in-out;
-}
-
-    .main-navbar .nav-link {
-      font-weight: 700;
-      color: black;
-    }
-
-    .main-navbar .nav-link.active {
-      color: rgb(223,10,10);
-      border-bottom: 2px solid rgb(223,10,10);
-    }
-
-   .btn-quote {
-  background-color: rgb(223,10,10);
-  color: rgb(15, 9, 9);
-  font-weight: 500;
-  border-radius: 30px;
-  padding: 5px 15px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.8s ease;
-  perspective: 1000px;
-  
-}
-
-.btn-quote:hover {
-  color: rgb(15, 9, 9);
-  transform: rotateY(360deg);
-  background-color: rgb(223,10,10); /* Keep red on hover */
-}
-
-
-   .call-info {
-  border-left: 1px solid #eee;
-  padding-left: 15px;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.call-info {
-  border-left: 1px solid #eee;
-  padding-left: 15px;
-}
-
-/* Icon stays red */
-.call-info i {
-  color: rgb(223,10,10);
-  margin-right: 5px;
-}
-
-/* Anchor default color + transition */
-.call-info a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-/* Only phone number turns red on hover */
-.call-info:hover a {
-  color: rgb(223,10,10);
-  text-decoration: underline;
-}
-
-
-
-  .banner {
-      height: 40rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #121212;
-      color: white;
-      position: relative;
-    }
-
-    .banner .banner-text h3 {
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-
-    .banner .banner-text p {
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 1px;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-
-    .form-card {
-      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent */
-      padding: 30px;
-      border-radius: 5px;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-      max-width: 100%;
-    }
-
-    .form-card input,
-    .form-card textarea,
-    .form-card select {
-      border-radius: 0;
-      box-shadow: none !important;
-    }
-
-    .form-card .form-label {
-      font-weight: 500;
-    }
-
-    .form-card .btn-warning {
-      width: 100px;
-    }
-
-    .form-card img {
-      width: 30px;
-      margin-right: 5px;
-    }
-
-    .form-header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-
-    .form-header span {
-      color: rgb(223, 10, 10);
-      font-weight: 600;
-      font-size: 1.2rem;
-    }
-
-    @media (max-width: 768px) {
-      .banner {
-        flex-direction: column;
-        height: auto;
-        padding: 2rem 1rem;
-      }
-
-      .banner-text {
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-    }
-.custom-red-btn {
-  background-color: rgb(223, 10, 10);
-  color: white;
-  border: none;
-  width: 200px;
-  transition: background-color 0.3s ease;
-}
-
-.custom-red-btn:hover {
-  background-color: rgb(180, 0, 0); /* Darker shade on hover */
-}
 
     /* card */
 
@@ -341,84 +55,6 @@
       color: #334;
       font-weight: 500;
     }
-
-    /* footer */
-
-    .footer {
-      background-color: #0b0a1e;
-      color: white;
-      padding: 60px 0 30px;
-    }
-
-    .footer h5 {
-      font-weight: bold;
-      margin-bottom: 20px;
-      position: relative;
-    }
-
-    .footer h5::after {
-      content: '';
-      width: 30px;
-      height: 2px;
-      background: rgb(223,10,10);
-      position: absolute;
-      left: 0;
-      bottom: -8px;
-    }
-
-    .footer a {
-      color: #ccc;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      color: rgb(223,10,10);
-    }
-
-    .footer .btn-red {
-      background-color: rgb(223,10,10);
-      color: white;
-      border-radius: 30px;
-    }
-
-    .footer .form-control,
-    .footer .btn {
-      border-radius: 0;
-    }
-
-    .footer .btn-submit {
-      background-color: rgb(223,10,10);
-      color: white;
-    }
-
-    .footer .title-gradient {
-      font-size: 32px;
-      font-weight: bold;
-      background: linear-gradient(to right, #ff6a00, #ee0979);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 30px;
-    }
-
-    .footer-bottom {
-      border-top: 1px solid #222;
-      padding-top: 20px;
-      margin-top: 40px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    .scroll-top-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #00ff84;
-      color: white;
-      border-radius: 50%;
-      padding: 12px;
-      z-index: 999;
-    }
-
 
 
       .business-section {
@@ -480,7 +116,7 @@
 
     .icon-card i {
       font-size: 32px;
-      color: rgb(223,10,10);
+      color: #3B060A;
     }
 
     .icon-card .text h4 {
@@ -505,10 +141,7 @@
       margin-bottom: 15px;
     }
 
-    .Login{
-        background-color: #0b0a1e !important;
-        color: #eee;
-    }
+ 
     .flip-card {
   background-color: transparent;
   width: 100%;
@@ -551,88 +184,108 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(223,10,10);
+  background: #8A0000;
 }
- .testimonial-section {
-      padding: 50px 0;
-      overflow: hidden;
-      background: #fff;
-    }
 
-    .testimonial-title {
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-    }
 
-    .slider {
-      display: flex;
-      width: fit-content;
-      animation: scroll 30s linear infinite;
-    }
+/* Review part */
+.testimonial-section {
+  padding: 80px 0;
+  overflow: hidden;
+  background: #fff;
+}
 
-    .slider-wrapper {
-      overflow: hidden;
-      width: 100%;
-    }
+.testimonial-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #8A0000;
+}
 
-    .testimonial-card {
-      flex: 0 0 350px;
-      background: rgb(223,10,10);
-      color: white;
-      margin: 0 15px;
-      padding: 1.5rem;
-      border-radius: 15px;
-      position: relative;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
 
-    .testimonial-card::before {
-      content: '❝';
-      font-size: 3rem;
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      color: #000;
-    }
+.slider {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
 
-    .testimonial-profile img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+.slider-content {
+  display: flex;
+}
 
-    .testimonial-name {
-      font-weight: bold;
-    }
+.slider-content > * {
+  flex-shrink: 0;
+}
 
-    .stars {
-      color: yellow;
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
+.testimonial-card {
+  flex: 0 0 320px;
+  max-width: 320px;
+  min-height: 180px;
+  background: #8A0000;
+  color: white;
+  margin: 0 15px;
+  padding: 1.8rem;
+  border-radius: 17px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
+.testimonial-card::before {
+  content: '❝';
+  font-size: 3.5rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #000;
+}
 
-    /* Duplicate content for smooth infinite scroll */
-    .slider-content {
-      display: flex;
-    }
+.testimonial-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-    .slider-content > * {
-      flex-shrink: 0;
-    }
+.testimonial-name {
+  font-weight: bold;
+}
 
-    @media (max-width: 768px) {
-      .testimonial-card {
-        flex: 0 0 80%;
-      }
-    }
+.stars {
+  color: yellow;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive Tweaks: Force same width across devices */
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    flex: 0 0 320px;
+  }
+}
+
+
+
+
+
 
     /* webdevelopment */
   /* Tabs style */
@@ -750,7 +403,7 @@
 }
 .why-card:hover {
   transform: scale(1.05);
-  background-color: rgb(223,10,10);
+  background-color: #3B060A;
   color: #fff;
 }
 

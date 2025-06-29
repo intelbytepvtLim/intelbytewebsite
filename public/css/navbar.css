@@ -1,0 +1,168 @@
+/* General Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #3B060A;
+  color: white;
+  font-size: 14px;
+  padding: 6px 0;
+}
+.top-bar a {
+  color: white;
+  margin-right: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.top-bar i {
+  margin-right: 5px;
+}
+.top-bar .logo-text {
+  font-weight: 600;
+  color: #ffffff;
+}
+.top-bar .social-icons a {
+  margin-left: 10px;
+}
+
+/* Navbar */
+.main-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+.main-navbar .nav-link {
+  color: #111;
+  padding: 10px 15px;
+  font-weight: 700;
+  color: #3B060A;
+}
+.main-navbar .nav-link:hover,
+.main-navbar .nav-link.active {
+  color: #8A0000;
+  border-bottom: 2px solid #8A0000;
+}
+
+/* call part  */
+.call-info {
+  font-weight: 600;
+  color: #3B060A;
+}
+
+.call-info:hover {
+  color: #8A0000;
+}
+
+.call-info strong {
+  color: #3B060A;
+}
+
+.call-info .phone-link {
+  text-decoration: none;
+  color: #3B060A;
+  transition: all 0.3s ease;
+}
+
+.call-info .phone-link:hover {
+  text-decoration: underline;
+  color: #ce2727;
+}
+
+/* Banner */
+.banner {
+  background: url('/banner-bg.jpg') no-repeat center center/cover;
+  position: relative;
+  color: white;
+  padding: 70px 0;
+}
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+.banner-text p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #8A0000;
+}
+.banner-text h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+.custom-red-btn {
+  background-color: #8A0000;
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+}
+.custom-red-btn:hover {
+  background-color: #c10a0a;
+}
+
+/* Form */
+.form-card {
+
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  color: #333;
+  width: 450px !important;
+  background-color: #dfdddd !important;
+}
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-header img {
+  height: 40px;
+}
+.form-header span {
+  color: #8A0000;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 8px;
+}
+.contact-form .form-control {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact-form textarea {
+  resize: none;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 991px) {
+  .banner-text, .form-card {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .form-header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .top-bar .col-md-4,
+  .top-bar .col-md-3,
+  .top-bar .col-md-5 {
+    text-align: center !important;
+    margin-top: 8px;
+  }
+}
+
+
